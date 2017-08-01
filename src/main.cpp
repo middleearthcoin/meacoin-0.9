@@ -1162,7 +1162,7 @@ return bnNew.GetCompact();
 unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
     unsigned int nProofOfWorkLimit = bnProofOfWorkLimit.GetCompact();
-    if(pindexLast->nHeight+1 >= 305000)
+    if(pindexLast->nHeight+1 >= 310000)
 	return DarkGravityWave(pindexLast, pblock); 
 
     // Genesis block
